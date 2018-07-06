@@ -1,0 +1,109 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>ijif</title>
+</head>
+<style>
+html {
+height: 100%;
+background: black;
+color: white;
+}
+a { color:white; }
+@font-face {
+font-family: "blockfont";
+pre {
+font: 16px "blockfont", Verdana, sans-serif;
+-webkit-font-smoothing : none;
+font-smooth: never;
+color: #eeeeee;
+}
+.red {
+color: #990000;
+}
+.green {
+color: #009900;
+}
+canvas {
+    display:block;
+    background: rgb(0,0,0);
+    position: fixed;
+    z-index: -1;
+}
+#content {
+    position: absolute;
+}
+</style>
+<body>
+<div id="particles-js">
+<pre id="content">
+<iframe src="https://giphy.com/embed/3o7IuSMnJEkoM" width="480" height="375" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/art-ascii-fda-3o7IuSMnJEkoM">via GIPHY</a></p>
+<h3><span class="red">[</span>About<span class="red">]</span></h3>Full Stack/Software Developer.
+I'm well versed in many skills in technology & product development.
+I like to build things, usually with technology, and a side of grit.
+I've worn many hats in my career between Information Security, back-end dev, front-end dev, and Software Development.
+I love knowledge, and I strongly believe technology can, and should enrich every single life this universe has to offer.
+
+Languages
+========
+C
+C++
+C#
+Python
+Java
+PHP
+Swift
+JavaScript
+
+Expertise
+=======
+Computer Assembly
+Full Stack Development
+Application Development
+iOS/Android App Development
+Python(Data Analysis, Machine Learning)
+Java
+
+
+
+<h3><span class="red">[</span>Projects<span class="red">]</span></h3>Latest posts:
+
+
+
+
+<h3><span class="red">[</span>Contact<span class="red">]</span></h3>&bull; E-mail  : IJIF@protonmail.ch
+&bull; Twitter : <a href="https://twitter.com/brian_ewr">@brian_ewr</a>
+&bull; Discord : ijif#0710
+&bull; XMPP    : 
+&bull; github  : <a href=https://github.com/ijif</a>
+
+
+
+
+</pre>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+<script>
+$(function() {
+  particlesJS("particles-js", {"particles":{"number":{"value":101,"density":{"enable":true,"value_area":881.8766334760375}},"color":{"value":"#cccccc"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.10,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#cccccc","opacity":0.06,"width":1},"move":{"enable":true,"speed":2.2,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+  let b = baffle('.crypto', {
+    characters: 'abcdef0123456789',
+    speed: 80
+    }).start();
+  b.reveal(3000, 1000);
+
+  let c = baffle('.cypher', {speed: 80}).start();
+  c.reveal(3000, 500);
+});
+</script>
+<audio loop="loop" autoplay="autoplay" id="backgroundmusic">
+    <source src="crack.mp3" type="audio/mpeg" />
+</audio>
+<script>
+  var audio = document.getElementById("backgroundmusic");
+  audio.volume = 0.3;
+</script>
+</html>
