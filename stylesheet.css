@@ -1,105 +1,134 @@
+!doctype html>
+<!--
+    Nothing to see here folks.
+
+	Most Up To Date - Version Of Mobilefag
+-->
+<html class="style-11">
+<head>
+<title>d74g0n</title>
+     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
+     <meta name="description" content= "Raw Data, Argus System.  24/7 Coverage of whatever I am looking at">
+     <meta name="keywords" content="thegreatawakening">
+
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+		<link href='https://fonts.googleapis.com/css?family=Verdana' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet'>
+
 <style>
-type="text/css">
-      styles ...
-html {
-height: 100%;
-background: black;
-color: white;
-}
-a { color:white; }
-@font-face {
-font-family: "blockfont";
-pre {
-font: 16px "blockfont", Verdana, sans-serif;
--webkit-font-smoothing : none;
-font-smooth: never;
-color: #eeeeee;
-}
-.red {
-color: #990000;
-}
-.green {
-color: #009900;
-}
-canvas {
-    display:block;
-    background: rgb(0,0,0);
-    position: fixed;
-    z-index: -1;
-}
-#content {
-    position: absolute;
-}
+
+
+
 </style>
+</head>
 <body>
-<div id="particles-js">
-<pre id="content">
-<iframe src="https://giphy.com/embed/3o7IuSMnJEkoM" width="480" height="375" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/art-ascii-fda-3o7IuSMnJEkoM"></a></p>
-<h3><span class="red">[</span>About<span class="red">]</span></h3>Full Stack/Software Developer.
-I'm well versed in many skills in technology & product development.
-I like to build things, usually with technology, and a side of grit.
-I've worn many hats in my career between Information Security, back-end dev, front-end dev, and Software Development.
-I love knowledge, and I strongly believe technology can, and should enrich every single life this universe has to offer.
+    <div id="outer">
 
-Languages
-========
-C
-C++
-C#
-Python
-Java
-PHP
-Swift
-JavaScript
+        <div id="infopane">
 
-Expertise
-=======
-Computer Assembly
-Full Stack Development
-Application Development
-iOS/Android App Development
-Python(Data Analysis, Machine Learning)
-Java
+                <nav class="topmenu">
+                    <ol>
+
+                    <li><a href="https://github.com/ijif" ,="" target="_blank">PROJECTS</a></li>
 
 
 
-<h3><span class="red">[</span>Projects<span class="red">]</span></h3>Latest posts:
+                    </ol>
+                </nav>
+            <div class="searchdata"> <span class="eyeon"> By ijif </span></div>
+        </div>
+      <div id="screen" class="style-11">
+        <div id="layer">
+            <div id="output">
+				<ul id="messages">
+
+							<div id="datarecord", style="background:#002018">
+								<li style="list-style:none">
+									<div id="picbox" style="padding-bottom:14px", "padding-right:2em", "visibility:visible", "width:15px">
+									<center>
+									<h2 id="argtit" style="color:white", "font-size:24px"> Once a d74g0n made an Argus </h2>
+									<br><img id="argus", style="visibility: visible", "width:50%", src="/Argus-Panoptes.jpg"></div>
+									</center>
+
+									<center>
+									<div id="maintext"><h2 id="argtit" style="color:white", "padding-left:20%"> “Appear weak when you are strong, and strong when you are weak.” </h2><h2><br> QAnon, TheGreatAwakening, ObamaGate, <br> WeThePeople, ReleaseTheCures, BigPharm, WWG1WGA,<br> DrainTheSwamp, DeepState, SethRich,<br> Pedofiles, SaveTheChildren </h2> <br> <h3 style="color:skyblue"> Welcome, here you will find projects I am currently working on and my contact info. <br> * For Educational Purposes Only * </h3><br><p>Q</p></div>
+									</center>
+								</li>
+							</div>
 
 
 
-
-<h3><span class="red">[</span>Contact<span class="red">]</span></h3>&bull; E-mail  : IJIF@protonmail.ch
-&bull; Twitter : <a href="https://twitter.com/brian_ewr">@brian_ewr</a>
-&bull; Discord : ijif#0710
-&bull; XMPP    :
-&bull; github  : <a href=https://github.com/ijif</a>
-
-
+				</ul>
+            </div>
+        </div>
+        <div id="overlay"></div>
+      </div>
+    </div>
 
 
-</pre>
-</div>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+
+<script>
+
+
+    var mycounter = 0
+	var socket = io();
+    $('form').submit(function(){
+    socket.emit('chat message', $('#m').val());
+    $('#m').val('');
+    return false;
+    });
+    socket.on('chat message', function(msg){ //tweet recieved from .js in msg dataform.
+
+	colorpass = msg.textcolor;
+	textpass = msg.text;
+	profilepic = msg.profilepic;
+	mediaurl = msg.media_url;
+        realname = msg.realname;
+        screenname = msg.name;
+        colorpass = 'yellowgreen';
+        locat = msg.locat;
+        desc = msg.desc;
+
+	rturl = msg.rt_url;
+
+	if (!msg.rt_url) {
+	rturl = "-=- ";
+	};
+
+	mycounter++;
+	if (mycounter == 1) { // :? a: colour alternator
+	bgpass = 'ECC0ED';
+        bgpass = 'black'; //notice my hack
+	};
+	if (mycounter > 1)  {
+	bgpass='C0DEED';
+	mycounter = 0;
+        bgpass = 'black'; //notice my hack
+	};
+
+	if (!msg.media_url ) { // missing media icon.
+        <!-- mediaurl = "http://www.assfaultjunkies.com/images/medals/drama.png"; -->
+        <!-- mediaurl = "https://i.imgur.com/dNv22n9.png"; -->
+        mediaurl = "https://i.imgur.com/Ewjo1lg.png";
+	};
+
+        // ******************** BUILDING THINGS SECTION **************************
+
+        hrefperson = "https://twitter.com/" + msg.name; // user_id '<a href=' reference.
+        hrefbuild = "https://twitter.com/" + msg.name + "/status/" + msg.id; // tweet '<a href=' reference.
+
+	$('#messages').prepend($('<div id="datarecord", style="background:#' + bgpass + '", "color:#'+ colorpass +'"><li>\n\
+                            <div id="timestamp"><a href="' + hrefbuild + '", target="_blank", style="color:#'+ colorpass +'", "background:#' + bgpass + ', "text-decoration:none"> ' + msg.time + ' </a></div>\n\
+                            <div id="media"><img src="' + mediaurl + '" download></div>\n\
+                            <div id="maintext"><a href="' + hrefbuild + '", target="_blank", style="color:#'+ colorpass +'", "background:#' + bgpass + ', "text-decoration:none"> ' + textpass + ' </a></div>\n\
+                            </li></div>'));
+
+    });
+</script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
-<script>
-$(function() {
-  particlesJS("particles-js", {"particles":{"number":{"value":101,"density":{"enable":true,"value_area":881.8766334760375}},"color":{"value":"#cccccc"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.10,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#cccccc","opacity":0.06,"width":1},"move":{"enable":true,"speed":2.2,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
-  let b = baffle('.crypto', {
-    characters: 'abcdef0123456789',
-    speed: 80
-    }).start();
-  b.reveal(3000, 1000);
 
-  let c = baffle('.cypher', {speed: 80}).start();
-  c.reveal(3000, 500);
-});
-</script>
-<audio loop="loop" autoplay="autoplay" id="backgroundmusic">
-    <source src="crack.mp3" type="audio/mpeg" />
-</audio>
-<script>
-  var audio = document.getElementById("backgroundmusic");
-  audio.volume = 0.3;
-</script>
+</html>
